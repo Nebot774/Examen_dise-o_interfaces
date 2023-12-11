@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imagenLogo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/imagenIcono1"
+            android:layout_width="105dp"
+            android:layout_height="101dp"
+
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toStartOf="@+id/texto1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenLogo"
+            app:srcCompat="@drawable/icono1" />
+
+        <ImageView
+            android:id="@+id/imagenIcono2"
+            android:layout_width="105dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintEnd_toStartOf="@+id/texto2"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenIcono1"
+            app:srcCompat="@drawable/icono2" />
+
+        <EditText
+            android:id="@+id/texto1"
+            android:layout_width="209dp"
+            android:layout_height="97dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#000000"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagenIcono1"
+            app:layout_constraintTop_toBottomOf="@+id/imagenLogo" />
+
+        <EditText
+            android:id="@+id/texto2"
+            android:layout_width="209dp"
+            android:layout_height="97dp"
+
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#000000"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagenIcono2"
+            app:layout_constraintTop_toBottomOf="@+id/texto1" />
+
+        <Button
+            android:id="@+id/botonLogin"
+            android:layout_width="276dp"
+            android:layout_height="91dp"
+            android:layout_marginTop="52dp"
+            android:gravity="center"
+            android:text="Login"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.629"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texto2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

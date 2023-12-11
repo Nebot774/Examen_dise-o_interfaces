@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color primario de la aplicación -->
+    <color name="colorPrimary">#79A2CF</color>
+
+    <!-- Variante más oscura del color primario para la barra de estado y otros elementos -->
+    <color name="colorPrimaryDark">#3192AF</color>
+
+    <!-- Color secundario para acentos y elementos destacados -->
+    <color name="colorSecondary">#B067F8</color>
+</resources>
